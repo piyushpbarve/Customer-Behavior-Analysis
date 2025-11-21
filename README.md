@@ -114,7 +114,7 @@ Subscribers:
 
 🚀 How to Run the Project
 1.	Clone the repository
-git clone https://github.com/piyushpbarve/customer-shopping-behavior-analysis.git
+git clone https://github.com/piyushpbarve/customer-behavior-analysis.git
 2.	Install dependencies
 pip install -r requirements.txt
 3.	Open the Jupyter Notebook
