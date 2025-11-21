@@ -1,132 +1,135 @@
-# Customer-Behavior-Analysis
-Customer Shopping Behavior Analysis
-This project analyzes 3,900 customer purchases to uncover trends in consumer behavior, spending patterns, product preferences, and loyalty indicators. The goal is to help businesses make data-driven decisions for marketing, customer retention, and product strategy.
+# Customer-Behavior-Analysis-
+Customer shopping behavior analysis using Python, SQL, and Power BI. Covers data cleaning, segmentation, product performance, discount impact, subscription behavior, and revenue insights across 3,900 purchases. Includes dashboards, SQL queries, and business recommendations.
 
+# 🛒 Customer Shopping Behavior Analysis
+This project analyzes customer shopping patterns using Python, SQL, and Power BI to uncover insights on demographics, spending behavior, product preferences, discount impact, and loyalty drivers across 3,900 transactions.  
+:contentReference[oaicite:1]{index=1}
 
-📌 Project Overview
-A retail company wants to understand what drives customer shopping decisions such as discounts, reviews, age groups, purchase frequency, and subscription behavior.
-This project explores the dataset using Python, SQL, and Power BI, transforming raw data into actionable insights.
+---
 
+## 📌 Project Overview
+A retail company aims to understand what influences customer decisions — discounts, reviews, age, subscriptions, shipping type, product preferences, and purchase frequency.  
+This project answers the core question:
 
-📂 Project Structure
-├── data/
-│   └── customer_shopping_behavior.csv
-├── notebooks/
-│   └── Customer_Shopping_Behavior_Analysis.ipynb
-├── sql/
-│   └── customer_behavior_sql_queries.sql
-├── reports/
-│   ├── Business Problem Document.pdf
-│   └── Customer Shopping Behavior Analysis.pdf
-├── dashboard/
-│   └── Power BI Dashboard (PBIX File)
-├── presentation/
-│   └── Customer-Shopping-Behavior-Analysis.pptx
-└── README.md
+**“How can customer shopping data be used to improve engagement, retention, and marketing strategies?”**  
+:contentReference[oaicite:2]{index=2}
 
+---
 
-🛠️ Tools & Technologies
-⦁	Python (Pandas, NumPy, Matplotlib)
-⦁	SQL (PostgreSQL)
-⦁	Power BI
-⦁	Excel / CSV Processing
+## 📂 Dataset Summary
+- **3,900 purchases**, **18 columns**  
+- Includes demographics, purchase details, shipping type, review ratings, previous purchases  
+- **37 missing values** in review ratings (cleaned using median per category)  
+:contentReference[oaicite:3]{index=3}
 
+---
 
-📊 Dataset Summary
-⦁	3,900 rows
-⦁	18 columns
-⦁	Contains demographic data, purchase details, discounts, previous purchases, ratings, and shipping types
-⦁	37 missing values in Review Ratings (cleaned using median imputation)
+## 🛠 Tools & Technologies
+- **Python:** Pandas, NumPy  
+- **SQL:** PostgreSQL  
+- **Power BI:** Interactive dashboard  
+- CSV & Excel data processing  
 
+---
 
-📝 Data Preparation (Python)
-Key steps:
-⦁	Loaded & explored dataset
-⦁	Cleaned missing values
-⦁	Renamed columns to snake_case
-⦁	Feature Engineering
-	Age groups
-	Purchase frequency
-⦁	Dropped redundant columns
-⦁	Loaded cleaned dataset into PostgreSQL for SQL analysis
+## 🧼 Data Preparation (Python)
+Key steps:  
+- Loaded & explored dataset  
+- Cleaned missing values (median imputation)  
+- Standardized column names  
+- Feature engineering  
+  - Age groups  
+  - Purchase frequency  
+- Loaded cleaned data into PostgreSQL  
+:contentReference[oaicite:4]{index=4}
 
+---
 
-🗄️ SQL Analysis
-SQL queries extracted insights such as:
-⦁	Revenue by gender
-⦁	High-value discount users
-⦁	Top-rated products
-⦁	Shipping type comparison
-⦁	Subscriber vs. non-subscriber revenue
-⦁	Customer segmentation (New, Returning, Loyal)
-⦁	Age-group revenue contribution
-⦁	Discount dependency
-⦁	Top 3 products per category
+## 🗄 SQL Analysis
+SQL queries were used to extract insights such as:
+- Revenue by gender  
+- High-value discount users  
+- Top-rated products  
+- Standard vs Express shipping spend  
+- Subscribers vs non-subscribers revenue  
+- Customer segmentation (New, Returning, Loyal)  
+- Discount dependency  
+- Top 3 products per category  
+- Age-group revenue contribution  
+:contentReference[oaicite:5]{index=5}
 
+---
 
-📈 Power BI Dashboard
-The interactive dashboard highlights:
-⦁	Revenue by category
-⦁	Revenue by age group
-⦁	Subscription impact
-⦁	Sales by category
-⦁	Customer segments
-⦁	Review rating distribution
-⦁	Shipping preference impact
+## 📊 Key Insights
+1. **Female customers generate slightly higher revenue** than males.  
+2. **Express shipping users spend 12% more per order.**  
+3. **Subscribers show higher loyalty and spend more** overall.  
+4. **High-value discount shoppers** represent strong marketing opportunities.  
+5. **Top-rated products** include Blouse, Dress, and Shirt (high satisfaction).  
+6. Customer segments:  
+   - **New:** 50%  
+   - **Returning:** 35%  
+   - **Loyal:** 15%  
+7. Age groups like **Young Adults** contribute highest revenue.  
+:contentReference[oaicite:6]{index=6}
 
+---
 
-🔍 Key Insights
-1.	Gender-based Revenue
-Female customers generate slightly higher revenue.
-2.	High-Value Discount Users
-Many customers spend above average even with discounts → high-value opportunity.
-3.	Top-Rated Products
-Items like Blouse, Dress, and Shirt receive the highest customer ratings.
-4.	Shipping Preferences
-Express shipping customers spend 12% more per order.
-5.	Subscription Impact
-Subscribers:
-⦁	Spend more
-⦁	Show higher loyalty
-⦁	Contribute a major share to revenue
-6.	Customer Segmentation
-⦁	New Customers: 50%
-⦁	Returning: 35%
-⦁	Loyal: 15%
+## 📈 Power BI Dashboard
+The interactive dashboard displays:
+- Revenue by category  
+- Revenue by age group  
+- Subscription impact  
+- Sales by category  
+- Customer segmentation  
+- Shipping type performance  
+- Review rating distribution  
+:contentReference[oaicite:7]{index=7}
 
+---
 
-📌 Business Recommendations
-⦁	Promote subscription benefits to boost recurring revenue
-⦁	Launch loyalty programs to convert Returning → Loyal customers
-⦁	Highlight top-rated products in marketing
-⦁	Target high-revenue age groups
-⦁	Promote express shipping for higher purchase value
+## 🎯 Business Recommendations
+- **Boost subscriptions** through exclusive benefits  
+- **Introduce loyalty programs** for returning buyers  
+- **Promote top-rated products** in campaigns  
+- **Target high-revenue age groups**  
+- **Encourage express shipping** for higher basket value  
+:contentReference[oaicite:8]{index=8}
 
+---
 
-📦 Files Included
-⦁	Python Notebook
-⦁	Cleaned Dataset
-⦁	SQL Queries
-⦁	PPT Presentation
-⦁	Business Problem PDF
-⦁	Power BI Dashboard
+## 📁 Project Structure
+```
+data/
+  customer_shopping_behavior.csv
+notebooks/
+  Customer_Shopping_Behavior_Analysis.ipynb
+sql/
+  customer_behavior_sql_queries.sql
+reports/
+  Business Problem Document.pdf
+  Customer Shopping Behavior Analysis.pdf
+dashboard/
+  Power BI Dashboard.pbix
+presentation/
+  Customer-Shopping-Behavior-Analysis.pptx
+README.md
+```
+:contentReference[oaicite:9]{index=9}
 
+---
 
-🚀 How to Run the Project
-1.	Clone the repository
-git clone https://github.com/piyushpbarve/customer-behavior-analysis.git
-2.	Install dependencies
-pip install -r requirements.txt
-3.	Open the Jupyter Notebook
-jupyter notebook
-4.	Run SQL queries
-Execute .sql file in PostgreSQL.
-5.	View Dashboard
-Open the .pbix file using Power BI Desktop.
+## 🚀 How to Run
+1. Clone repository  
+2. Install dependencies  
+3. Run Python notebook  
+4. Execute SQL queries in PostgreSQL  
+5. Open Power BI dashboard (.pbix file)
 
+---
 
-📞 Contact
-Piyush Barve
+## 👤 Author
+**Piyush Barve**  
 Data Analyst skilled in SQL, Power BI, Python, ETL, and predictive analytics. Passionate about building dashboards, analyzing data, and solving real-world problems through analytics.
 📧 Email: piyushbarve@outlook.com
 🔗 GitHub: github.com/piyushpbarve
